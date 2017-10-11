@@ -1,0 +1,14 @@
+{
+  "/api": {
+
+    "target": "http://blrkec2010web4:8083/",
+    "secure": false
+  },
+  "/img": {
+    "target": "http://blrkec2010web4:8083/",
+
+    "secure": false
+  }
+  
+  
+}

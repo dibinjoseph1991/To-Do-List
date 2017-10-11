@@ -1,0 +1,19 @@
+ <br>
+<h4>
+ You may edit the task
+</h4>
+
+<form >
+  <br><br>
+
+  <h4> Edit <i>{{task.text}}</i> task </h4>
+  <br>
+    
+  <div >
+<textarea name="body" placeholder="Jot it down before you loose it..." name="body" [(ngModel)]="task.text"></textarea>
+</div>
+
+<button class="btn btn-primary" type="button" (click)='goBack()'>Save</button>
+<button class="btn btn-warning" type="button" (click)="task.status='Pending'" [disabled]="task.status=='Pending'">Pending</button>
+<button class="btn btn-danger" type="button" (click)='remove(task)'>Completed</button>
+</form>
